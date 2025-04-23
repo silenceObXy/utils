@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 118.31.171.207:8848
+        namespace: mdx
+        group: mdx
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #配置Sentinel dashboard地址
+feign:
+  sentinel:
+    enabled: true
+
+elasticsearch:
+  host: 118.31.171.207:9200
+  port: 9200
+  scheme: http
+
