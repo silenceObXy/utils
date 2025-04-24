@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UserServiceImpl implements UserService {
     @Override
     public String getOrderNo(String userId, String tenantId, HttpServletRequest request) {
+        System.out.println("进来了");
         return "O111111111111";
     }
 }
